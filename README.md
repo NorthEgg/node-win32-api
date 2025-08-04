@@ -52,9 +52,10 @@ npm install win32-api
 
 ```ts
 import { 
-  FindWindow, 
+  FindWindowEx, 
   GetDefaultPrinter,
 } from 'win32-api/util'
+import {spawn} from 'child_process'; 
 
 // Retrieves the printer name of the default printer for the current user on the local computer
 const printerName = await GetDefaultPrinter()
